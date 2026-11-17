@@ -27,7 +27,11 @@ interface DataFileSchema {
   sessions: Record<string, string>; // token -> accountId
 }
 
-const DATA_FILE = path.resolve(process.cwd(), '.vellum-store.json');
+const SEED_FILE = path.resolve(process.cwd(), '.vellum-store.json');
+const IS_SERVERLESS = Boolean(
+  process.env.VERCEL || process.env.VERCEL_ENV || process.env.AWS_LAMBDA_FUNCTION_NAME
+);
+const DATA_FILE = IS_SERVERLESS ? path.join('/tmp', '.vellum-store.json') : SEED_FILE;
 
 function createDefaultJourney(): JourneyStage[] {
   return [
@@ -464,11 +468,18 @@ function sanitizeStore(parsed: unknown): DataFileSchema {
 
 function loadStore(): DataFileSchema {
   try {
-    if (fs.existsSync(DATA_FILE)) {
-      const raw = fs.readFileSync(DATA_FILE, 'utf-8').trim();
-      if (raw) {
-        const parsed = JSON.parse(raw);
-        return sanitizeStore(parsed);
+    const candidateFiles = DATA_FILE === SEED_FILE ? [DATA_FILE] : [DATA_FILE, SEED_FILE];
+    for (const filePath of candidateFiles) {
+      if (fs.existsSync(filePath)) {
+        const raw = fs.readFileSync(filePath, 'utf-8').trim();
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          const sanitized = sanitizeStore(parsed);
+          if (filePath !== DATA_FILE) {
+            saveStore(sanitized);
+          }
+          return sanitized;
+        }
       }
     }
   } catch (err) {
