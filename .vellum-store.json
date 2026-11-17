@@ -1,0 +1,197 @@
+{
+  "accounts": {
+    "guest-reader": {
+      "id": "guest-reader",
+      "email": "reader@moonlightpages.app",
+      "name": "Evening Reader",
+      "passwordHash": "",
+      "salt": "",
+      "state": {
+        "id": "guest-reader",
+        "name": "Evening Reader",
+        "email": "reader@moonlightpages.app",
+        "isGuest": true,
+        "preferences": {
+          "genres": [
+            "Classic Literature",
+            "Thriller"
+          ],
+          "favoriteAuthors": [
+            "Fyodor Dostoevsky"
+          ],
+          "experience": "never",
+          "languageDifficulty": "Very Easy",
+          "maxDifficulty": 1,
+          "dailyTime": "30 minutes",
+          "preferredLength": "Short",
+          "ageGroup": "Adult",
+          "appLanguage": "English"
+        },
+        "privacy": {
+          "shareReadingHistory": true,
+          "saveAiConversations": true,
+          "privateJournal": true,
+          "personalizedRecommendations": true,
+          "publicProfile": false
+        },
+        "readerSettings": {
+          "theme": "light",
+          "fontSize": 19,
+          "fontFamily": "serif",
+          "lineSpacing": "relaxed"
+        },
+        "library": {
+          "reading": [
+            "tagore-stories"
+          ],
+          "want_to_read": [
+            "study-in-scarlet",
+            "time-machine"
+          ],
+          "completed": [
+            "o-henry-stories"
+          ],
+          "abandoned": [
+            "white-nights"
+          ],
+          "favorites": [
+            "o-henry-stories"
+          ]
+        },
+        "progress": {
+          "tagore-stories": {
+            "bookId": "tagore-stories",
+            "currentChapterIndex": 0,
+            "currentPage": 1,
+            "percentComplete": 0,
+            "minutesRead": 0,
+            "bookmarks": [],
+            "highlights": [],
+            "lastReadAt": "2026-11-17T18:13:47.285Z"
+          },
+          "white-nights": {
+            "bookId": "white-nights",
+            "currentChapterIndex": 0,
+            "currentPage": 28,
+            "percentComplete": 34,
+            "minutesRead": 42,
+            "bookmarks": [
+              0
+            ],
+            "highlights": [
+              {
+                "chapterIndex": 0,
+                "text": "this midnight bridge felt less lonely simply because she stood beside me."
+              }
+            ],
+            "lastReadAt": "2026-11-17T18:13:47.285Z"
+          },
+          "o-henry-stories": {
+            "bookId": "o-henry-stories",
+            "currentChapterIndex": 1,
+            "currentPage": 64,
+            "percentComplete": 100,
+            "minutesRead": 85,
+            "bookmarks": [],
+            "highlights": [],
+            "rating": 5,
+            "lastReadAt": "2026-11-15T18:13:47.285Z"
+          }
+        },
+        "currentBookId": "tagore-stories",
+        "vocabulary": [
+          {
+            "id": "vocab-seed-1",
+            "word": "Admonition",
+            "simpleMeaning": "Gentle advice or a firm warning about someone’s behavior.",
+            "example": "The teacher gave him a quiet admonition before class began.",
+            "similarWords": [
+              "warning",
+              "counsel",
+              "reprimand"
+            ],
+            "difficulty": "Medium",
+            "bookTitle": "White Nights",
+            "savedAt": "2026-11-16T18:13:47.285Z"
+          },
+          {
+            "id": "vocab-seed-2",
+            "word": "Candidly",
+            "simpleMeaning": "Speaking openly, honestly, and without hiding feelings.",
+            "example": "She confessed candidly that she had never finished a novel before.",
+            "similarWords": [
+              "honestly",
+              "frankly",
+              "openly"
+            ],
+            "difficulty": "Easy",
+            "bookTitle": "White Nights",
+            "savedAt": "2026-11-17T18:13:47.285Z"
+          }
+        ],
+        "journal": [
+          {
+            "id": "journal-seed-1",
+            "bookId": "o-henry-stories",
+            "bookTitle": "The Gift of the Magi & Short Stories",
+            "chapterTitle": "The Quiet Exchange",
+            "thought": "Short, warm, and surprisingly moving—it made classic fiction feel effortless.",
+            "favoriteCharacter": "Della",
+            "favoriteQuote": "Their foolish, generous exchange revealed a wiser devotion.",
+            "feeling": "Warm and hopeful",
+            "createdAt": "2026-11-15T18:13:47.285Z"
+          }
+        ],
+        "journey": [
+          {
+            "level": 1,
+            "label": "Level 1 — Short & Gentle Stories",
+            "description": "Warm, clear prose under 70 pages to build confidence.",
+            "bookId": "tagore-stories",
+            "status": "current"
+          },
+          {
+            "level": 2,
+            "label": "Level 2 — Easy Engaging Novels",
+            "description": "Page-turning plots with accessible everyday vocabulary.",
+            "bookId": "study-in-scarlet",
+            "status": "upcoming"
+          },
+          {
+            "level": 3,
+            "label": "Level 3 — Accessible Classics",
+            "description": "Emotional depth and richer style in compact length.",
+            "bookId": "white-nights",
+            "status": "upcoming"
+          },
+          {
+            "level": 4,
+            "label": "Level 4 — Layered Literature",
+            "description": "Nuanced ideas, classic elegance, and deeper themes.",
+            "bookId": "dorian-gray",
+            "status": "upcoming"
+          },
+          {
+            "level": 5,
+            "label": "Level 5 — Masterworks",
+            "description": "Ambitious literary epics approached with ease.",
+            "bookId": "crime-and-punishment",
+            "status": "upcoming"
+          }
+        ],
+        "stats": {
+          "pagesRead": 92,
+          "chaptersCompleted": 3,
+          "totalMinutesRead": 127,
+          "booksCompleted": 1,
+          "streakDays": 4,
+          "lastActiveDate": "2026-11-17",
+          "avgPagesPerHour": 34,
+          "challengeDay": 3,
+          "challengePagesToday": 12
+        }
+      }
+    }
+  },
+  "sessions": {}
+}

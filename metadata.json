@@ -1,0 +1,6 @@
+{
+  "name": "Vellum — Personalized Novel Discovery & Reading Companion",
+  "description": "An intelligent, calm literary companion that helps readers of all levels discover the right novels, read distraction-free, learn vocabulary, and explore stories with spoiler-safe AI guidance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
